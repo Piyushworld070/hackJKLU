@@ -16,8 +16,16 @@ const firebaseConfig = {
     var name=getElementByVal('name');
     var email=getElementByVal("email");
     var message=getElementByVal("message");
-    console.log(name,email,message)
+    saveMessages(name,email,message);
   }
+   const saveMessages=(name,email,message) => {
+    var newcontactform=formDB.push();
+    newcontactform.set({
+      name:name,
+      email:email,
+      message:message
+    })
+   };
   const getElementByVal=(id)=>{
     return document.getElementById(id).ariaValueMax;
   };

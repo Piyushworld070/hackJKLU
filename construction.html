@@ -10,7 +10,7 @@
   <header>
     <img src="WhatsApp Image 2024-03-15 at 19.47.17_944d1a32.jpg" alt="logo">
    
-            <div class="container">
+            <div class="cont">
                 <h1 class="logo">CO-SUPPLIRER</h1>
                 <nav>
                     <ul>
@@ -78,27 +78,37 @@
 
            
 
-  <section id="contact Us">
-    <h2 style="background-color: rgb(65, 67, 66);">Contact Us</h2>
-    <form id="contactForm" action="contact.php" method="POST">
-      <label for="name">Name:</label>
-      <input type="text" id="name" name="name" required>
-      <label for="email">Email:</label>
-      <input type="email" id="email" name="email" required>
-      <label for="message">Message:</label>
-      <textarea id="message" name="message" required></textarea>
-      <button type="submit">Send Message</button>
+    <h2  align:"center" style="background-color: aquamarine;">Contact Us</h2>
+  <div class="container">
+    <form action="" id="contactForm">
+        <div class="alert">Your message sent</div>
+
+        <div class="inputBox">
+            <input type="text" id="name" placeholder="Your name...." />
+        </div>
+
+        <div class="inputBox">
+            <input type="email" id="emailid" placeholder="Your Email....." />
+        </div>
+
+        <div class="inputBox">
+            <textarea id="msgContent" cols="30" rows="10" placeholder="ask question"></textarea>
+        </div>
+
+        <div class="inputBox">
+            <button type="submit">Submit</button>
+        </div>
     </form>
-  </footer>
-
-
-  </section>
+</div>
+  <script src="mail.js"></script>
+  
+ 
 
   <footer>
     <p>&copy; 2024 Construction Company. All rights reserved.</p>
     <p>Mail:cosupplier.gmail.com</p>
   </footer>
 
-  <script src="mail.js"></script>
+  
 </body>
 </html>
