@@ -13,7 +13,7 @@ const firebaseConfig = {
   document.getElementById("form").addEventListener("submit",submitform);
   function submitform(e){
     e.preventDefault();
-    var name=getElementByVal('name');
+    var name=getElementByVal('name') ;
     var email=getElementByVal("email");
     var message=getElementByVal("message");
     saveMessages(name,email,message);
